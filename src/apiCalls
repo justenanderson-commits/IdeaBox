@@ -1,0 +1,11 @@
+const getIdeas = () => {
+  return fetch('http://localhost:301/api/v1/ideas')
+      .then(response => {
+        if(!response.ok) {
+          throw new Error("That's an error")
+        }
+        return response.json()
+      })
+    }
+
+    export default getIdeas
