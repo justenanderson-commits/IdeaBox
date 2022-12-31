@@ -26,10 +26,10 @@ class Form extends Component {
   }
 
   clearInputs = () => {
-    this.setState = {
+    this.setState({
       title: '',
       description: ''
-    }
+    })
   }
 
   render() {
